@@ -10,9 +10,9 @@ Source : https://en.wikipedia.org/wiki/Joker_(character)
 
 ## Commands:
 
-> val inputFile = sc.textFile("C:/44517/spark.txt")
-> val counts = inputFile.flatMap(line => line.split(" ")).map(word => (word,1)).reduceByKey(_ + _);
-> counts.saveAsTextFile("c:/output")
+> val inputFile = sc.textFile("C:/44517/spark.txt")  
+> val counts = inputFile.flatMap(line => line.split(" ")).map(word => (word,1)).reduceByKey(_ + _);  
+> counts.saveAsTextFile("c:/output")  
 
 ## Results
 
